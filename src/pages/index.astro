@@ -1,0 +1,71 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const selectedWork = [
+  "Backend systems",
+  "Full-stack products",
+  "Cloud-native delivery",
+  "Technical consulting",
+];
+---
+
+<MainLayout>
+  <main class="site-shell">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Senior software engineer</p>
+        <h1 id="intro-title">Bruno Jardon</h1>
+        <p class="intro">
+          I build reliable backend and full-stack systems for teams that need
+          clean architecture, steady delivery, and pragmatic product judgment.
+        </p>
+
+        <div class="actions" aria-label="Primary links">
+          <a class="button button-primary" href="mailto:bruno@bjardon.com">
+            <i class="bi bi-envelope-at-fill" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+          <a
+            class="button"
+            href="https://www.linkedin.com/in/brunojardon/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            class="button"
+            href="https://github.com/bjardon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="bi bi-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait-panel" aria-label="Profile image">
+        <div class="portrait-frame">
+          <img
+            src="/images/profile-notion-face.png"
+            alt="Bruno Jardon"
+          />
+        </div>
+        <p>Mexico City / remote-friendly</p>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Selected capabilities">
+      {
+        selectedWork.map((item) => (
+          <span>
+            <i class="bi bi-plus-lg" aria-hidden="true" />
+            {item}
+          </span>
+        ))
+      }
+    </section>
+  </main>
+</MainLayout>

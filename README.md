@@ -38,6 +38,8 @@ The current iteration should establish a focused, indexable presence at `bjardon
 
 ## Repo Map
 
+- `src/`: Astro source for the public website.
+- `public/`: Static assets served by the site.
 - `docs/`: Durable project documentation and external source references.
 - `plans/`: Optional planning artifacts for work that benefits from a durable plan.
 
