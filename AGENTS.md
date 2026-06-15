@@ -7,3 +7,7 @@
 - Keep product-shaping dependencies and sensitive surfaces ask-first: hosting, domains, production, billing, analytics, secrets, and contact endpoints.
 - Do not stage, commit, push, or deploy unless asked.
 - Add architecture notes or ADRs only when the project has real system shape or hard-to-reverse decisions.
+
+## Rules Index
+
+- [Agentic workflow](docs/agentic-workflow.md): interactive local work, verification expectations, and commit message rules.

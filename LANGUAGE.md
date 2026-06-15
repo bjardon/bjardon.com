@@ -20,3 +20,5 @@ Product terms are the main purpose. Add workflow terms only when they shape futu
 - **Upstream planning source**: External planning context that may inform future repo updates but is not authoritative until reflected in repo docs.
 - **Issue Tracker**: Tactical tracking for issues, slices, and delivery status. It is not the source of truth for product direction.
 - **Agentic engineering workflow**: Using agents for intake, planning, implementation, and documentation while keeping authority and decisions in the repo.
+- **Interactive agent session**: A run where Bruno is actively present, prompting, reviewing changes, and can provide local context such as an existing localhost URL.
+- **Unattended agent run**: A run where the agent is expected to proceed without Bruno actively watching or supplying local runtime context, such as cloud or background execution.
