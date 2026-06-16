@@ -10,9 +10,9 @@
   --color-accent: #ff4d00;
   --color-accent-secondary: #00a6d6;
   --color-accent-tertiary: #f6d32d;
-  --font-display: "Prata", Georgia, serif;
-  --font-sans: "Geist Sans", sans-serif;
   --font-mono: "Geist Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Hedvig Letters Serif Variable", serif;
 }
 
 @layer base {

@@ -1,12 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-
-const selectedWork = [
-  "Backend systems",
-  "Full-stack products",
-  "Cloud-native delivery",
-  "Technical consulting",
-];
 ---
 
 <MainLayout>
@@ -23,32 +16,24 @@ const selectedWork = [
         <p
           class="border-border bg-accent-secondary text-foreground mb-6 inline-flex border-[3px] px-3 py-2.5 font-mono text-[0.86rem] leading-none font-extrabold uppercase shadow-[5px_5px_0_var(--color-border)]"
         >
-          Senior software engineer
+          Sr. Software Engineer
         </p>
         <h1
           id="intro-title"
           class="font-display max-w-[760px] text-[clamp(4rem,9vw,8.25rem)] leading-[0.92] font-normal max-[860px]:text-[clamp(3.55rem,16vw,5.8rem)]"
         >
-          Bruno Jardon
+          Bruno Jardón
         </h1>
         <p
           class="border-accent bg-surface/78 text-foreground mt-8 max-w-[720px] border-l-8 py-[18px] pr-0 pl-6 text-[clamp(1.25rem,2.2vw,1.8rem)] leading-[1.3] font-semibold max-[860px]:mt-[26px] max-[860px]:pl-[18px]"
         >
-          I build reliable backend and full-stack systems for teams that need
-          clean architecture, steady delivery, and pragmatic product judgment.
+          I build scalable full-stack products
         </p>
 
         <div
           class="mt-[34px] flex flex-wrap gap-3.5 max-[520px]:w-full"
           aria-label="Primary links"
         >
-          <a
-            class="border-border bg-accent inline-flex min-h-12 items-center justify-center gap-2.5 border-[3px] px-4 py-[13px] font-mono text-[0.98rem] leading-none font-extrabold text-white no-underline shadow-[5px_5px_0_var(--color-border)] transition-[box-shadow,transform,background] duration-150 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[2px_2px_0_var(--color-border)] max-[520px]:w-full"
-            href="mailto:bruno@bjardon.com"
-          >
-            <i class="bi bi-envelope-at-fill" aria-hidden="true"></i>
-            <span>Email</span>
-          </a>
           <a
             class="border-border bg-surface text-foreground inline-flex min-h-12 items-center justify-center gap-2.5 border-[3px] px-4 py-[13px] font-mono text-[0.98rem] leading-none font-extrabold no-underline shadow-[5px_5px_0_var(--color-border)] transition-[box-shadow,transform,background] duration-150 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[2px_2px_0_var(--color-border)] max-[520px]:w-full"
             href="https://www.linkedin.com/in/brunojardon/"
@@ -89,20 +74,6 @@ const selectedWork = [
           Mexico City / remote-friendly
         </p>
       </div>
-    </section>
-
-    <section
-      class="grid grid-cols-4 gap-3 pb-2 max-[860px]:grid-cols-2 max-[860px]:pb-8 max-[520px]:grid-cols-1"
-      aria-label="Selected capabilities"
-    >
-      {
-        selectedWork.map((item) => (
-          <span class="border-border bg-surface flex min-h-[74px] items-center gap-2.5 border-[3px] p-3.5 font-mono text-[0.9rem] leading-[1.15] font-extrabold shadow-[5px_5px_0_var(--color-border)]">
-            <i class="bi bi-plus-lg text-accent" aria-hidden="true" />
-            {item}
-          </span>
-        ))
-      }
     </section>
   </main>
 </MainLayout>
