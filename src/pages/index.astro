@@ -10,23 +10,47 @@ const selectedWork = [
 ---
 
 <MainLayout>
-  <main class="site-shell">
-    <section class="hero" aria-labelledby="intro-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Senior software engineer</p>
-        <h1 id="intro-title">Bruno Jardon</h1>
-        <p class="intro">
+  <main
+    class="mx-auto min-h-screen w-[min(1120px,calc(100%_-_32px))] py-7 max-[860px]:w-[min(calc(100%_-_24px),680px)]"
+  >
+    <section
+      class="grid min-h-[calc(100vh_-_56px)] grid-cols-[minmax(0,1fr)_minmax(280px,380px)] items-center gap-14 max-[860px]:min-h-auto max-[860px]:grid-cols-1 max-[860px]:gap-[34px] max-[860px]:py-14 max-[860px]:pb-8"
+      aria-labelledby="intro-title"
+    >
+      <div
+        class="before:border-border before:bg-accent-tertiary relative before:absolute before:top-[clamp(58px,9vw,96px)] before:-left-[18px] before:-z-10 before:h-[clamp(56px,8vw,96px)] before:w-[min(74vw,660px)] before:border-4 before:content-[''] max-[860px]:before:-left-2.5 max-[860px]:before:w-[min(92vw,560px)]"
+      >
+        <p
+          class="border-border bg-accent-secondary text-foreground mb-6 inline-flex border-[3px] px-3 py-2.5 font-mono text-[0.86rem] leading-none font-extrabold uppercase shadow-[5px_5px_0_var(--color-border)]"
+        >
+          Senior software engineer
+        </p>
+        <h1
+          id="intro-title"
+          class="font-display max-w-[760px] text-[clamp(4rem,9vw,8.25rem)] leading-[0.92] font-normal max-[860px]:text-[clamp(3.55rem,16vw,5.8rem)]"
+        >
+          Bruno Jardon
+        </h1>
+        <p
+          class="border-accent bg-surface/78 text-foreground mt-8 max-w-[720px] border-l-8 py-[18px] pr-0 pl-6 text-[clamp(1.25rem,2.2vw,1.8rem)] leading-[1.3] font-semibold max-[860px]:mt-[26px] max-[860px]:pl-[18px]"
+        >
           I build reliable backend and full-stack systems for teams that need
           clean architecture, steady delivery, and pragmatic product judgment.
         </p>
 
-        <div class="actions" aria-label="Primary links">
-          <a class="button button-primary" href="mailto:bruno@bjardon.com">
+        <div
+          class="mt-[34px] flex flex-wrap gap-3.5 max-[520px]:w-full"
+          aria-label="Primary links"
+        >
+          <a
+            class="border-border bg-accent inline-flex min-h-12 items-center justify-center gap-2.5 border-[3px] px-4 py-[13px] font-mono text-[0.98rem] leading-none font-extrabold text-white no-underline shadow-[5px_5px_0_var(--color-border)] transition-[box-shadow,transform,background] duration-150 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[2px_2px_0_var(--color-border)] max-[520px]:w-full"
+            href="mailto:bruno@bjardon.com"
+          >
             <i class="bi bi-envelope-at-fill" aria-hidden="true"></i>
             <span>Email</span>
           </a>
           <a
-            class="button"
+            class="border-border bg-surface text-foreground inline-flex min-h-12 items-center justify-center gap-2.5 border-[3px] px-4 py-[13px] font-mono text-[0.98rem] leading-none font-extrabold no-underline shadow-[5px_5px_0_var(--color-border)] transition-[box-shadow,transform,background] duration-150 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[2px_2px_0_var(--color-border)] max-[520px]:w-full"
             href="https://www.linkedin.com/in/brunojardon/"
             target="_blank"
             rel="noreferrer"
@@ -35,7 +59,7 @@ const selectedWork = [
             <span>LinkedIn</span>
           </a>
           <a
-            class="button"
+            class="border-border bg-surface text-foreground inline-flex min-h-12 items-center justify-center gap-2.5 border-[3px] px-4 py-[13px] font-mono text-[0.98rem] leading-none font-extrabold no-underline shadow-[5px_5px_0_var(--color-border)] transition-[box-shadow,transform,background] duration-150 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[2px_2px_0_var(--color-border)] max-[520px]:w-full"
             href="https://github.com/bjardon"
             target="_blank"
             rel="noreferrer"
@@ -46,22 +70,35 @@ const selectedWork = [
         </div>
       </div>
 
-      <div class="portrait-panel" aria-label="Profile image">
-        <div class="portrait-frame">
+      <div
+        class="rotate-[1.5deg] self-center max-[860px]:w-[min(100%,390px)] max-[860px]:justify-self-center"
+        aria-label="Profile image"
+      >
+        <div
+          class="border-border bg-surface aspect-square overflow-hidden border-4 shadow-[10px_10px_0_var(--color-border)]"
+        >
           <img
+            class="block h-full w-full object-cover contrast-[1.08] saturate-[0.92]"
             src="/images/profile-notion-face.png"
             alt="Bruno Jardon"
           />
         </div>
-        <p>Mexico City / remote-friendly</p>
+        <p
+          class="border-border bg-accent mt-[18px] ml-auto w-fit -rotate-3 border-[3px] px-3 py-2.5 font-mono text-[0.85rem] leading-[1.1] font-extrabold text-white shadow-[5px_5px_0_var(--color-border)]"
+        >
+          Mexico City / remote-friendly
+        </p>
       </div>
     </section>
 
-    <section class="signal-strip" aria-label="Selected capabilities">
+    <section
+      class="grid grid-cols-4 gap-3 pb-2 max-[860px]:grid-cols-2 max-[860px]:pb-8 max-[520px]:grid-cols-1"
+      aria-label="Selected capabilities"
+    >
       {
         selectedWork.map((item) => (
-          <span>
-            <i class="bi bi-plus-lg" aria-hidden="true" />
+          <span class="border-border bg-surface flex min-h-[74px] items-center gap-2.5 border-[3px] p-3.5 font-mono text-[0.9rem] leading-[1.15] font-extrabold shadow-[5px_5px_0_var(--color-border)]">
+            <i class="bi bi-plus-lg text-accent" aria-hidden="true" />
             {item}
           </span>
         ))
